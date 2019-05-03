@@ -114,19 +114,17 @@ footer {
 
 /* Header Styles */
 
-header {
-
-}
-
-header .content-wrapper {
+header .content-wrapper,
+footer .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding: 15px 0;
 }
 
-header .header-divider {
-
+header img {
+    width: 60%;
 }
 
 header nav {
@@ -134,28 +132,14 @@ header nav {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-footer {
-
-}
-
-footer .content-wrapper {
-
-}
-
-address {
-
-}
-
-footer .social {
-
+    width: 60%;
 }
 
 footer .social-icons {
@@ -165,7 +149,8 @@ footer .social-icons {
 }
 
 footer .copyright {
-
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -174,20 +159,24 @@ footer .copyright {
 
 .hero-area {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    padding: 50px 0 0 20px;
 }
 
 aside {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0px;
+    padding: 0 20px;
 }
 
 aside .form-description {
-
+    margin: 0;
+    padding: 0;
 }
 
 aside .form {
@@ -201,6 +190,17 @@ aside .form {
     flex-flow: row wrap;
 }
 
+.features h2 {
+    padding: 45px 20px;
+}
+
+.features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
 .features .features-items {
     display: flex;
     justify-content: center;
@@ -212,8 +212,8 @@ aside .form {
 
 }
 
-.features .features-item-description {
-
+.features p {
+    margin: 0;
 }
 
 .reviews {
@@ -221,10 +221,15 @@ aside .form {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    padding: 0 20px;
 }
 
 .reviews article {
 
+}
+
+.reviews h3{
+    width: 45%;
 }
 
 /* ----------------- Mobile Styles - About ------------------*/
@@ -234,6 +239,7 @@ aside .form {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    padding: 0 20px;
 }
 
 .contact-section {
@@ -241,6 +247,7 @@ aside .form {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    padding: 50px 20px;
 }
 
 /* ----------------- Mobile Styles - FAQs ------------------*/
@@ -250,6 +257,11 @@ aside .form {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
+    padding: 0 20px;
+}
+
+.faq h2 {
+    padding: 0 20px;
 }
 
 .faq .content-wrapper {
