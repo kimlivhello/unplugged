@@ -120,6 +120,8 @@ footer {
 
 header {
     padding: 15px 0;
+    display: flex;
+    justify-content: center;
 }
 
 header .content-wrapper {
@@ -195,9 +197,8 @@ footer .copyright {
 
 .hero-area {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-flow: row wrap;
-    margin-left: 20px;
 }
 
 aside {
@@ -252,7 +253,6 @@ aside {
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    padding-left: 20px;
 }
 
 .contact-section {
@@ -271,7 +271,7 @@ aside {
 
 .faq {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     margin: 0 20px;
@@ -384,7 +384,7 @@ aside {
 
 @media only screen and (min-width: 768px) {
     
-    /* ----- Homepage ----- */
+    /* ----- Homepage Tablet ----- */
 
     .content-wrapper {
         max-width: 640px;
@@ -413,10 +413,8 @@ aside {
 
     .hero-area {
         margin: 0;
-    }
-
-    .hero-area h1 {
-        padding-left: 40px;
+        display: flex;
+        justify-content: center;
     }
 
     aside {
@@ -434,7 +432,7 @@ aside {
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
         margin: 0;
-        width: 40%;
+        width: 45%;
     }
     
     aside .form {
@@ -490,7 +488,7 @@ aside {
         width: 100%;
     }
 
-    /* ----- About ----- */
+    /* ----- About Tablet ----- */
 
     .mission-content {
         display: flex;
@@ -518,7 +516,7 @@ aside {
         width: 80%;
     }
 
-    /* ----- FAQs ----- */
+    /* ----- FAQs Tablet ----- */
 
     .faq content-wrapper {
         justify-content: space-between;
@@ -536,6 +534,54 @@ aside {
 
 @media only screen and (min-width: 1200px) {
     /*Desktop styles here */
+
+    /* ----- Homepage Desktop ----- */
+
+    .content-wrapper {
+        max-width: 960px;
+    }
+
+    header h1 {
+        width: 75%;
+    }
+
+    aside .content-wrapper {
+        justify-content: space-around;
+        width: 67%;
+    }
+
+    features h2 {
+        width: 90%;
+    }
+
+    .features article {
+        flex-basis: 33%;
+    }
+
+    .features .features-item-description {
+        width: 33%;
+    }
+
+    /* ----- About Desktop ----- */
+
+    .mission h2 {
+        width: 90%;
+    }
+
+    .contact-section .content-wrapper h2 {
+        width: 90%;
+    }
+
+    /* ----- FAQs Desktop----- */
+
+    .faq .content-wrapper h2 {
+        width: 75%;
+    }
+
+    .faq-question {
+        flex-basis: 50%;
+    }
+
 }
  
 /* ==========================================================================
