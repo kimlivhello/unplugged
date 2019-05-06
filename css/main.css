@@ -113,11 +113,13 @@ body {
 h1,
 h2 {
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 h3, 
 h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 h1 {
@@ -148,6 +150,7 @@ ul {
 }
 
 li {
+    color: #e2e3ed;
     text-transform: uppercase;
 }
 
@@ -169,6 +172,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #202322;
 }
 
 header {
@@ -227,6 +231,11 @@ footer .content-wrapper {
 
 footer .contact {
     margin-bottom: 50px;
+    color: #e2e3ed;
+}
+
+footer h4 {
+    color: #e2e3ed;
 }
 
 footer .social-icons {
@@ -239,10 +248,12 @@ footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #e2e3ed;
 }
 
 footer .copyright {
     margin: 20px 0;
+    color: #e2e3ed;
 }
 
 
@@ -256,11 +267,42 @@ footer .copyright {
 }
 
 aside {
+    background-color: #527158;
+    color: e2e3ed;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    margin-left: 20px;
+    padding-left: 20px;
+}
+
+aside .form {
+    margin-top: 30px;
+}
+
+aside h3, aside p {
+    color: #e2e3ed;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+}
+
+input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .features {
@@ -291,6 +333,7 @@ aside {
 }
 
 .reviews {
+    background-color: #527158;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -301,9 +344,15 @@ aside {
     margin: 20px 0;
 }
 
+.reviews h3, .reviews h2, .reviews p {
+    color: #e2e3ed;
+}
+
 /* ----------------- Mobile Styles - About ------------------*/
 
 .mission {
+    background-color: #527158;
+    color: #e2e3ed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,10 +360,12 @@ aside {
 }
 
 .contact-section {
+    background-color: #527158;
+    color: #e2e3ed;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     padding: 50px 20px;
 }
 
@@ -325,11 +376,13 @@ aside {
 /* ----------------- Mobile Styles - FAQs ------------------*/
 
 .faq {
+    background-color: #527158;
+    color: #e2e3ed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0 20px;
+    padding: 0 20px;
 }
 
 .faq .content-wrapper {
@@ -605,7 +658,7 @@ aside {
         width: 67%;
     }
 
-    features h2 {
+    .features h2 {
         width: 90%;
     }
 
@@ -634,7 +687,8 @@ aside {
     }
 
     .faq-question {
-        flex-basis: 50%;
+        flex-basis: 45%;
+        padding-left: 20px;
     }
 
 }
