@@ -443,7 +443,7 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 50px 0 0 0;
+    margin: 50px 0;
 }
 
 .faq h2 {
