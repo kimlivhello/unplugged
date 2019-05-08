@@ -106,7 +106,6 @@ html {
     font-size: 16px;
 }
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -259,24 +258,24 @@ footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+}
+
+ footer .social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+footer .social-icons i {
+    font-size: 2em;
+    padding: 10px;
+    width: 1em;
 }
 
 footer .social-icons a {
     border-radius: 50%;
     background-color: #527158;
     margin: 0 1em;
-}
-
-footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .social-icons i {
-    font-size: 2em;
-    padding: 10px;
 }
 
 footer .copyright {
@@ -606,11 +605,15 @@ input[type=button] {
     }
 
     footer .social-icons i {
-        padding: 20px;
+        padding: 15px;
+    }
+
+    .hero-area {
+        min-height: 600px;
     }
 
     .hero-area h1 {
-        font-size: 3em;
+        font-size: 2.75em;
         margin: 0;
         width: 90%;
     }
@@ -626,10 +629,6 @@ input[type=button] {
     aside .content-wrapper .form {
         margin: 0;
         width: 35%;
-    }
-    
-    .features h2 {
-        margin: 0 20px 20px 0;
     }
 
     .features article {
@@ -780,9 +779,10 @@ input[type=button] {
         width: 60%;
     }
 
-    .hero-area h1{
-        font-size: 3.75em;
-        width: 60%;
+    .hero-area h1 {
+        font-size: 3em;
+        text-align: center;
+        width: 100%;
     }
 
     aside .content-wrapper {
@@ -799,7 +799,7 @@ input[type=button] {
     }
 
     .features h2 {
-        width: 70%;
+        width: 100%;
     }
 
     .features article {
