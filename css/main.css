@@ -240,10 +240,16 @@ footer p {
 }
 
 footer .content-wrapper {
-    width: 55%;
+    width: 60%;
     margin: 50px 0;
 }
 
+/* footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
 
 footer .contact {
     margin-bottom: 50px;
@@ -253,12 +259,24 @@ footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 60%;
+}
+
+footer .social-icons a {
+    border-radius: 50%;
+    background-color: #527158;
+    margin: 0 1em;
 }
 
 footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer .social-icons i {
+    font-size: 2em;
+    padding: 10px;
 }
 
 footer .copyright {
@@ -342,6 +360,8 @@ input[type=button] {
 .features i {
     font-size: 3.75em;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .features p {
@@ -570,8 +590,23 @@ input[type=button] {
         justify-content: space-between;
     }
 
-    .header-divider {
+    header .header-divider {
         display: none;
+    }
+
+    
+    footer .contact p {
+        padding-top: 20px;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 32%;
+    }
+
+    footer .social-icons i {
+        padding: 20px;
     }
 
     .hero-area h1 {
